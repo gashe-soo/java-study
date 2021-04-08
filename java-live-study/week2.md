@@ -240,7 +240,7 @@ Java는 중괄호 {} 블록을 기준으로 변수의 스코프를 정한다.
 
 여기서 백기선님이 집어주신 포인트는 변수의 생성시기(로딩시기)가 다르다는 것이다. 
 
-<img src="https://github.com/gashe-soo/java-study/blob/master/img/lj_week2_scope.JPG?raw=true" alt="lj_week2_scope.jpg"  />
+<img src="https://github.com/gashe-soo/java-study/blob/master/img/lj_week2_scopeImg.JPG?raw=true" alt="lj_week2_scope.jpg"  />
 
 알다시피 static 변수는 클래스 변수로 클래스가 로딩되면서 메모리가 할당된다. 
 
