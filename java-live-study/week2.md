@@ -238,13 +238,19 @@ Java는 중괄호 {} 블록을 기준으로 변수의 스코프를 정한다.
 | 인스턴스 변수 | 클래스 영역 | 인스턴스가 생성될 때        | 각각의 인스턴스                                              |
 | 지역 변수     | 메소드 영역 | 변수 선언문이 수행되었을 때 | 메소드 안                                                    |
 
-여기서 백기선님이 집어주신 포인트는 
+여기서 백기선님이 집어주신 포인트는 변수의 생성시기(로딩시기)가 다르다는 것이다. 
 
-<img src="https://github.com/gashe-soo/java-study/blob/master/img/lj_week2_scope.JPG?raw=true" alt="week2_scope.jpg"  />
+<img src="https://github.com/gashe-soo/java-study/blob/master/img/lj_week2_scope.JPG?raw=true" alt="lj_week2_scope.jpg"  />
 
-그림과 같이 static 변수는 클래스 변수로 Class Loader가 로딩하면서 JVM의 메소드 영역에 저장된다. (위 표의 선언위치 : 메소드영역과 다르다.)
+알다시피 static 변수는 클래스 변수로 클래스가 로딩되면서 메모리가 할당된다. 
 
-그러나 인스턴스 변수는 런타임에 실행되면서 올라간다. 따라서 static 변수가 new Instance()를 참조하는 것은 불가능하다.
+그런데 method인 makeNum은 인스턴스가 생성되면서 메모리에 할당된다. 따라서 클래스 변수가 로딩되면서는 인스턴스 변수를 참조할 수 없다.
+
+반면 반대로는 당연히 가능하다. 이미 로딩되었기 때문이다. (makeNum()함수는 static 변수인 STATIC_VALUE를 사용하고 있다!)
+
+그렇다면 메소드를 어떻게 하면 사용할 수 있을까? 
+
+static 메소드로 바꿔주면 사용이 가능하다!
 
 
 
