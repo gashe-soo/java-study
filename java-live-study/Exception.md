@@ -187,7 +187,7 @@ Java7부터 멀티 catch가 가능하다.
 try{
     throw new ArrayIndexOutOfBoundsException();
     throw new NumberFormatException();
-}catch(ArrayIndexOutOfBoundsException e1 || NubmerFormatException e2){
+}catch(ArrayIndexOutOfBoundsException | NubmerFormatException e){
     // 예외 처리
 }catch(Exception e){}
 ```
