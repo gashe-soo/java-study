@@ -331,7 +331,7 @@ jls은 두 가지의 경고 카테고리를 제공한다. `deprecation`과 `unch
 `@Retention` annotation은 해당 annotation이 얼만큼 유지되는지를 결정한다. 
 
 - `RetentionPolicy.SOURCE` – 소스 레벨에서만 유지되고 컴파일러에서 무시된다.
-- `RetentionPolicy.CLASS` – 컴파일 타임에 유지되지만, JVM에게되는 무시된다.
+- `RetentionPolicy.CLASS` – 컴파일 타임에 유지되지만, JVM에게는 무시된다.
 - `RetentionPolicy.RUNTIME` – JVM에서도 유지되어 런타임에서도 사용할 수 있다.
 
 <br>
