@@ -382,7 +382,7 @@ fw.close();
 
 다음과 같이 사용한다. 아래 그림은 `이것이 자바다` 책 p1028에 나온 그림을 직접 그려서 사용했다.
 
-![lj_io_sub-stream.jpg](https://github.com/gashe-soo/java-study/blob/master/img/lj_io_sub-stream.jpg?raw=true)
+![lj_io_sub-stream.JPG](https://github.com/gashe-soo/java-study/blob/master/img/lj_io_sub-stream.JPG?raw=true)
 
 보조스트림은 하나가 아니라 다른 보조스트림에도 연결하여 스트림 체인을 만들 수 있다.
 
