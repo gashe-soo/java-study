@@ -875,8 +875,6 @@ List<? extends Number>  numList = intList;  // OK. List<? extends Integer> is a 
 
 ### Wildcard Capture and Helper Methods
 
-In some cases, the compiler infers the type of a wildcard. For example, a list may be defined as `List<?>` but, when evaluating an expression, the compiler infers a particular type from the code. This scenario is known as *wildcard capture*.
-
 컴파일러는 와일드카드의 타입을 추론한다. 이를 *wildcard capture*라고 한다. 
 
 그런데 어떨 때는 `capture of`라는 에러 메세지를 뜨면서 타입 추론이 제대로 되지 않는다. 
